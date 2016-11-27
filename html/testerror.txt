@@ -1,0 +1,36 @@
+Error: The border attribute on the table element is obsolete. Use CSS instead.
+
+From line 18, column 5; to line 18, column 20
+
+body>↩    <table border=2>↩  <tr
+
+Warning: The border attribute on the table element is presentational markup. Consider using CSS instead. For example: table, td, th { border: 1px solid gray }
+
+From line 88, column 1; to line 88, column 16
+
+</table>↩↩<table border=1>↩    <
+
+Warning: A table row was 4 columns wide and exceeded the column count established by the first row (3).
+
+From line 97, column 22; to line 98, column 9
+
+ell 3</td>↩    </tr>↩    <
+
+Warning: A table row was 6 columns wide and exceeded the column count established by the first row (3).
+
+From line 112, column 33; to line 114, column 9
+
+Red 6</td>↩↩    </tr>↩</tab
+
+Error: Table column 6 established by element td has no cells beginning in it.
+
+From line 111, column 33; to line 112, column 22
+
+Red 5</td>↩      <td colspan="2">Red 6<
+
+// noticed that they check the colum number.
+// th is heading
+// td is data/cell
+// tr is row
+// the table is drawn row a row
+// the are not capable of handling double span row or column in the middle or end of the table
