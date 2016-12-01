@@ -1,0 +1,37 @@
+body{
+    background-color: white;
+    border: solid black 1px;
+    margin-left: 10px;
+
+}
+
+h1{
+  margin-left: 10px;
+  font-family : Helvetica, Times, Serif;
+  color : #f4d142;
+  font-size: 1.8em;
+
+}
+h1 + blockquote {
+  margin-left: 10px;
+}
+blockquote {
+    width : 150px;
+    height: 200px;
+    border : solid black 1px;
+    border-top: solid grey 5px;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 20px;
+    text-align: left;
+
+
+}
+cite{
+
+  display: block;
+  font-weight: bold;
+  margin-top: 4px;
+}
