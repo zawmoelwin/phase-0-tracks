@@ -1,0 +1,21 @@
+To make the content in the center we can use css {margin :auto;}
+
+
+Mobile first design
+
+It is the design concept that is revolutionary.
+Traditionally we design the webpage for the destop web browsers first.
+Now we are designing for the mobile devices first due to connectivity of the mobile devices and their media capability.
+
+floating
+Float is the properties that float the section. It was used to wraps the text around the image.
+clear will effect the floating elements clear from taking position of the text.
+
+Pros and Cons of the float elements
+
+Pros
+It is flexible, and easy to use.
+
+Cons
+We need to be careful and need to use {clear : left } {clear : right } for the sections we do not want to
+go to occupy the spaces created by the floating elements
