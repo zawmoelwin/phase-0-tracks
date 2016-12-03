@@ -44,17 +44,57 @@ Flexbox : flex is rendered like a box. It is used when a page needed to be flexi
          best fit in the available space on any display device.
          Positioning child elements is thus much easier, and complex layouts can
          be achieved more simply and with cleaner code, as the display order of the elements is independent of their order in the source code.
-
+        flexbox is usually single-axis oriented
 Grid :
+      http://www.w3schools.com/css/css_rwd_grid.asp
+      https://css-tricks.com/snippets/css/complete-guide-grid/
+      https://www.w3.org/TR/2016/CR-css-grid-1-20160929/
+
+      grid is 2 axis layout unlike flexbox.
+
 
 list-style-type
+      it is a numbering or bulleting of a list. It can accept value in
 
-
-You'll be answering these questions over and over again for all sorts of properties. Use the documentation linked above, or find your own resource that you find readable.
+      circle
+      disc
+      square
+      armenian
+      cjk-ideographic
+      decimal
+      decimal-leading-zero
+      georgian
+      hebrew
+      hiragana
+      hiragana-iroha
+      katakana
+      katakana-iroha
+      lower-alpha
+      lower-greek
+      lower-latin
+      lower-roman
+      upper-alpha
+      upper-latin
+      upper-roman
+      none
+      inherit
 
 
 
 What is the box model?
 
+The CSS Box Model
+
+All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
+It is explanation of the
+Margin , Border, Padding, and content into boxes of smaller sizes to better understand the
+layout of the HTML document and CSS styling.
+http://www.w3schools.com/css/css_boxmodel.asp
+
 
 So far, we've been using color names like pink and green, but those options are pretty limited. What other ways are there to declare colors in CSS?
+
+#color numbers
+rgb
+rgba
+hsl
