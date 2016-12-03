@@ -1,0 +1,60 @@
+5Find a few CSS cheat sheets. You might use phrases like "quick reference" or "quick guide" as well to round up a few resources. Scan them quickly. What sorts of tasks can you accomplish with CSS?
+http://www.lesliefranke.com/files/reference/csscheatsheet.html
+
+Each CSS property has a set of acceptable values. What do the following properties do? What are their acceptable values? (Feel free to experiment with them in JSFiddle.)
+
+
+CSS properties are like classes. You assign the acceptable value to the properties is like calling a function inside the class. It will do the assigned value function to the section the property is applied to.
+
+text-transform
+
+text-transform property's acceptable value
+lowercase: change to all lower case
+uppercase: change to all uppercase of the section text content.
+capitalize: Change first letter into capital.
+none: keep the text as it was typed in the HTML file.
+inherit: inherit from parent section's  CSS property.
+
+
+
+
+display (to see this in action, you may need to set the width of your elements to narrower than 100%)
+
+inline :        Default of all elements
+inline-block :  block, but sits on a line
+block :         make a block of section and div.
+none :          Hide
+run-in:         not supported by mozilla firefox.
+
+Table group
+  table: Force display of the section into a table.
+  table-cell: Force display of the section into a table cell.
+  table-column: Force display of the section into a table column.
+  table-colgroup: Force display of the section into a table colgroup.
+  table-header-group: Force display of the section into a table header group.
+  table-row-group: Force display of the section into a table row group.
+  table-footer-group: Force display of the section into a table footer group.
+  table-row: Force display of the section into a table row.
+  table-caption: Force display of the section into a table caption.
+
+Flexbox : flex is rendered like a box. It is used when a page needed to be flexible
+          to different screen sizes. It obsolete the need of using float and
+          its margin does not overlap with its content.
+         flex layout is the ability to alter its items' width and/or height to
+         best fit in the available space on any display device.
+         Positioning child elements is thus much easier, and complex layouts can
+         be achieved more simply and with cleaner code, as the display order of the elements is independent of their order in the source code.
+
+Grid :
+
+list-style-type
+
+
+You'll be answering these questions over and over again for all sorts of properties. Use the documentation linked above, or find your own resource that you find readable.
+
+
+
+What is the box model?
+
+
+So far, we've been using color names like pink and green, but those options are pretty limited. What other ways are there to declare colors in CSS?
