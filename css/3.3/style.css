@@ -1,0 +1,27 @@
+
+.octopus
+{
+  width : 300px;
+  margin : 200px auto 0;
+  display : block;
+
+}
+
+.hat{
+width: 200px;
+margin: auto;
+display: block;
+position: relative;
+left: -70px;
+top: -340px;
+
+}
+.glasses{
+  width: 200px;
+  margin: auto;
+  display: block;
+  position: relative;
+  left: -10px;
+  top: -360px;
+
+}
