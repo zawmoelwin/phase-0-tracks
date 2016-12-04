@@ -1,0 +1,16 @@
+    What is fixed positioning? When would you use it?
+fixed position is position when you can put an item at the fixed x,y point of the screen.
+
+
+
+    What are relative and absolute positioning?
+Relative postitioning is something relative to the position it should be occupying.
+Absolute positioning is the positioning to the "NEAREST" positioned ancester.
+
+
+
+
+
+    What is a z-index? When might that come in handy?
+z-index is index for overlapping when occupying the same position. z-index is the index number
+for overlapping. Lower value z-index will go beind and larger value will come infornt.
