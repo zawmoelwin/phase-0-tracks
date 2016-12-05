@@ -1,0 +1,34 @@
+Name at least three categories of CSS adjustments (example: colors)?
+#numbers
+rgb
+rgba
+hsl
+hsla
+
+What are the three ways to link a CSS rule to an HTML document? Which one is the best and why?
+External style sheet //linking to the external css file link
+Internal style sheet //adding style in the html documents
+Inline style // adding style in the <tag itself>
+
+What is a selector? Give examples of at least three types of selectors.
+selector is the selecting the tag and id and class
+# for id
+. for class
+h1 or any tags for tags
+* for every tags
+h1+p for every p tags followed by h1 tags
+
+What is the box model?
+box model is the model of the HTML showing how the elements are displayed.
+margin / border / padding / and the content.
+
+Explain and give an example of the cascading effect of CSS.
+The cascading effect of CSS is the properties of a tag can be modified by multiple css of different level.
+last level effect will be applied to the page.
+
+Name two CSS techniques that assist in responsive design.
+assigning the percentage of the available width : width : 20%;
+grids with proportions.
+scanning the media for available screensize and assigning the css accordingly:
+@media screen and (min-width: 480px)
+
