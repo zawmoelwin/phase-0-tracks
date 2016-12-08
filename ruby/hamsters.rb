@@ -54,7 +54,7 @@ p " The  #{color} hamster  #{hamster_name} has noise level of #{sound_level}"
 
 if age == nil 
   
-  p "Age is not known"
+  p "Its age is not known"
   
 else
   
