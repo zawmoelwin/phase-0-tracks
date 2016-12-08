@@ -50,7 +50,7 @@ else
 	
 	end
 	
-p " The  #{color}  #{hamster_name} has noise level of #{sound_level}" 
+p " The  #{color} hamster  #{hamster_name} has noise level of #{sound_level}" 
 
 if age == nil 
   
@@ -60,4 +60,10 @@ else
   
 p "Its age is #{age}"
     
+  end
+
+  if adoption == "y"
+p "It is ready for adoption" 
+else
+p "It need some more training to be ready for adoption" 	
   end
