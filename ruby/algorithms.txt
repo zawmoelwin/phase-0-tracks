@@ -61,4 +61,33 @@ moving elevator end.
 
 
 
-look for the
+My REAL LIFE algorithm
+
+Time scheduled.
+Need to bathe before going out (y/n)
+Need to prepear lunch (y/n) 
+Time for travel
+
+if need to bathe 
+preparation time plus 30 min
+if need to prepear lunch
+preparation time plus 30 min
+add time for travel
+
+check time scheduled - preparation time  early than current time?
+then "S***, I need to hurry"
+
+otherwise make an alarm
+
+when alarm rings
+check time difference more than travel time.
+
+Random reason 
+" I will spray cologne"
+" I will chew gum"
+" I will eat outside"
+" I 'll .. ' "
+snooze 10 min, 
+
+else.. 
+"Oh, quick , I am late"
