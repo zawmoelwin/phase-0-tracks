@@ -1,0 +1,64 @@
+ask me the floor number
+face yourself to the entrance.
+look at the left side of the entrance for buttons.
+look for buttons at the right side of the entrance.
+  if there is no buttons turn right
+  look for buttons at the left side of the wall.
+  look for buttons at the right side of the wall.
+repeat 4 times.
+if no button is found.
+tell me " I can't find the control for the elevator"
+
+if buttons  is found
+read the buttons from the lowest row
+ go left to right
+ then next row
+ remember the row and column number for each button number
+ until there is no more row
+exclude the open door close door and emergency buttons
+
+look for the floor number in the button number.
+
+If there is no match,
+  tell me , "The floor only have floor from " first button number and last button number.
+  tell me , "Give me different floor number or find another elevator to access the floor number you give me"
+
+If there is a match
+ press the floor number button.
+
+check the door close start
+Check if the door is closed.
+  if not closed. press floor number button.
+  wait for 30 seconds.
+try 3 times until it is closed.
+if it is not closed after 3 times, say "Elevator is not working as it is supposed to"
+Ask " Do you want to try again or change another elevator?"
+if the answer is try again , start doing check the door close
+check the door close end.
+
+moving elevator start
+
+check the door.
+If it is opened,
+
+check the light above the door for the floor number.
+if cannot see the light or number, look at the outside wall number.
+
+if it is not the floor number I want to go
+press close door button.
+
+if cannot find both number,
+press open door button
+tell me " I can't tell the floor number, is this the floor you want to go"
+
+if yes " please move out of the elevator"
+if no
+release open door button
+press door close button
+
+do this until we reach the floor.
+moving elevator end.
+
+
+
+look for the
