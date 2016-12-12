@@ -15,21 +15,51 @@ Would you like to enroll in the company’s health insurance?
 Vampires are immortal, so they certainly don’t need health insurance.
 =end
 
+name = ""
+age = 0
+year = 0
+order = ""
+healthinsurance = ""
+propably_vampire = false
+
+def interface 
+
 p "What is your name"
 name = gets.chomp
 name = name.downcase!
 
 p "How old are you?"
-age = gets.chomp
+age = gets.chomp.to_i
 
 p "What year you are born?"
-year = gets.chomp
+year = gets.chomp.to_i
 
 p "Our company cafeteria serves garlic bread. Should we order some for you? (y/n)"
-order = gets.chomp
+order = gets.chomp.downcase
 
-p "would you like to enroll in the company's health insurance? (sign up = y , do not sign up = n , waives = w)"
-healthinsurance = gets.chomp
+p "would you like to enroll in the company's health insurance? (y/n)"
+healthinsurance = gets.chomp.downcase
+
+	if (age == age_check(year) && order == "y" ) || healthinsurance == "y"
+
+		puts "Probably not a vampire."
+
+	elsif   (!(age == age_check(year)) && order == "n") || healthinsurance == "n"
+		puts "Probably a vampire."
+
+	elsif   (!(age == age_check(year)) && order == "n") && healthinsurance == "n"
+		puts "Almost certainly a vampire."
+
+	elsif   (name == "Drake Cula") || (name == "Tu Fang")
+		puts "Definitely a vampire. "
+
+	else
+		puts "Results inconclusive"
+
+	end
+
+end
+
 
 =begin
 	
@@ -52,15 +82,55 @@ end
 
 age_check(year)
 vampire_check()
-=end
+s
 
 If the employee got their age right, and is willing to eat garlic bread or sign up for insurance, the result is “Probably not a vampire.”
 If the employee got their age wrong, and hates garlic bread or waives insurance, the result is “Probably a vampire.”
 If the employee got their age wrong, hates garlic bread, and doesn’t want insurance, the result is “Almost certainly a vampire.”
 Even if the employee is an amazing liar otherwise, anyone going by the name of “Drake Cula” or “Tu Fang” is clearly a vampire, because come on. In that case, you should print “Definitely a vampire.”
 Otherwise, print “Results inconclusive.”
+=end
 
 def age_check (year)
+
 	actual_age = (2016-year)
-	retrun actual_age
+	return actual_age
 end
+
+
+def vampire_check
+
+
+
+end
+
+def allergy_check 
+	propably_vampire = false
+	finish = ""
+
+	while !(finish == "done") 
+		puts "please enter the allergy, type (done) when done "
+		finish = gets.chomp.downcase
+		if finish == "sunshine"
+			return propably_vampire = true
+		end
+	end
+
+end
+
+
+
+puts "How many employee to be processed"
+times = gets.chomp.to_i
+i=0
+while i<times
+	i+=1
+	interface
+	vampire_check()
+	
+	if allergy_check()
+	puts "Probably a vampire." 
+	end
+
+end
+	
