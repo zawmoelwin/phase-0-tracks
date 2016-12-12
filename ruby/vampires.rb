@@ -17,6 +17,7 @@ Vampires are immortal, so they certainly don’t need health insurance.
 
 p "What is your name"
 name = gets.chomp
+name = name.downcase!
 
 p "How old are you?"
 age = gets.chomp
@@ -27,9 +28,14 @@ year = gets.chomp
 p "Our company cafeteria serves garlic bread. Should we order some for you? (y/n)"
 order = gets.chomp
 
-p "would you like to enroll in the company's health insurance?"
+p "would you like to enroll in the company's health insurance? (sign up = y , do not sign up = n , waives = w)"
 healthinsurance = gets.chomp
 
+=begin
+	
+rescue Exception => e
+	
+end
 def age_check
 	actual_age = (2016-year)+1
 	
@@ -46,3 +52,15 @@ end
 
 age_check(year)
 vampire_check()
+=end
+
+If the employee got their age right, and is willing to eat garlic bread or sign up for insurance, the result is “Probably not a vampire.”
+If the employee got their age wrong, and hates garlic bread or waives insurance, the result is “Probably a vampire.”
+If the employee got their age wrong, hates garlic bread, and doesn’t want insurance, the result is “Almost certainly a vampire.”
+Even if the employee is an amazing liar otherwise, anyone going by the name of “Drake Cula” or “Tu Fang” is clearly a vampire, because come on. In that case, you should print “Definitely a vampire.”
+Otherwise, print “Results inconclusive.”
+
+def age_check (year)
+	actual_age = (2016-year)
+	retrun actual_age
+end

@@ -1,0 +1,137 @@
+Variables
+1. What is a variable? Why might a programmer use a variable?
+variable is a symbol or name assigned to a changing value and we abstractly handling 
+the changing value and programs are procedures of handling these changing values.
+
+Only with the variable, a program can handle unknown situation with same conditions, and it is useful in real life.
+
+
+2. If the value of first_name is "Abraham" and last_name is "Lincoln", explain the order in which Ruby will run the line full_name = first_name + last_name, and what the final result will be.
+
+Final result of the variable full_name is "AbrahamLincoln" as "+" operator will combine the two string together.
+
+
+Data Types
+3. For each of the following data types, write a short definition and give at least one example of when you might use the data type in a program. (Don't use an example we've already provided.)
+
+string
+variable type that handle the letters or words. It cannot be o.perated in any mathematical operations. Strings can be used in programs as a variable for name, addresses, notes, and others data that needs letters and words to display, store, manipulate.
+
+string = "How are you?"
+name   = "Zaw"
+
+p string + " " + name
+
+this line will be able to show different message according to variable value and name.
+
+integer
+Full number. there is no decimal and its value are closest value. 
+it is the basic mathematical variable.
+
+Usually it is used in taking count in repetation, or store the value of whole number
+
+while i < string.length
+
+i+=1
+
+
+end
+
+
+float
+
+mathematical variable with decimals. Ususally used for storing data the better detail for mathematical value.
+
+
+
+
+nil
+value for nothing or empty
+
+Stirng = nil
+
+
+
+
+boolean
+variable for true for false conditional checking.
+it also return boolean value if you check some condition.
+
+
+Algorithms
+
+
+
+4. What is an algorithm?
+algorithms are a series of actions or step by step procedures to complete an automated actions.
+
+5. What are two common categories of algorithm in computer science? 
+Searching and sorting algorithms might be the most common categories of algorithm in computer science.
+
+
+Methods
+6. What is a method? Why might a programmer choose to use a method?
+Method is a group of instructions grouped together to do some actions. These actions are common for different part of the program and it is wise to write them in a method and reuse them elsewhere. It is also better for debugging and maintence. 
+
+7. Define the following terms as they relate to a method. 
+
+return value
+the main return value of the method
+
+side effect
+changes made in the method, like saving a file, editing a file, displaying something other than the main return value.
+
+parameter
+variable passed into a method. In objective oriented programming, a method with the same name with different parameters do different jobs.
+
+
+argument
+value passed into the variable of the method to function as intended.
+
+
+implicit return
+ruby method return value after each method, even if it is not explicitly return a value.
+
+
+default return
+
+default return of a method. 
+for example 
+puts will return the value of "nil" after displaying the string but
+p will return the value of the displayed string instead.
+method usually return the value of the last expression when it runs out of code.
+
+
+8. What are global scope and method scope? How do those scopes impact the availability of data at different points in a program?
+Global scope and method scope is like public and local.
+Global scope is available throughout the program but variable declared within the method are not accessible outside the method as they are destroyed as soon as the method is ended.
+
+
+Control Flow
+
+
+9. What is control flow? Why might a programmer choose to use flow control?
+control flow is the control of the program flow according to the input or data.
+A programmer choose to use flow control because we want the program flexible and react to the input of the user or the data. We use if , case to check conditions or for while each to make repeatitive processes.
+
+10. Define the following terms as they relate to flow control.
+
+loop
+repetative processes until a condition is met
+
+if
+conditonal checking and if a condition is met 
+
+else
+if such condtion is not met
+
+
+elsif
+check for another condition if first condition is not met
+
+
+while
+repetative processes if a condition is not changed
+
+until
+repetative processes until a condition is met.
