@@ -14,7 +14,7 @@
 
 # "enhance".<???>
 # => "    enhance    "
-enhance.center(15)
+"enhance".center(15)
 
 # "Stop! You’re under arrest!".<???>
 # => "STOP! YOU’RE UNDER ARREST!"
