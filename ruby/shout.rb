@@ -17,7 +17,7 @@ module Shout
   end
 
   def yell_happily(words)
-  	"Yay! "+ words + "!!!" + " :)"
+  	"Yay!" + words + "!!!" + " :)"
   end
 end
 
