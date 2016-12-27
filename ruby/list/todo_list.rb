@@ -28,13 +28,14 @@ class TodoList
     @list =  cup
   end
 
-  def get_items
-      @list 
+  def get_items(*args)
+    if args.length>0
+    @list[args[0]]
+    else
+    @list
+    end 
   end
   
-  def get_items_index(cup)
-      @list [cup]
-  end
 
   def add_item(item)
     @list << item
