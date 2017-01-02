@@ -1,0 +1,15 @@
+number of guesses = unlimited
+number of errors = 5
+
+read the text file or enter the word for the second player to guess.
+
+start of second user to play guessing the word.
+
+for every letter it enters check if the letter is in the word.
+if the letter is there .. update the display.. 
+
+if ther letter is not in the word.. update number of errors
+
+stop the game if the number of errors has reached the maxium allowed
+
+update display .. 

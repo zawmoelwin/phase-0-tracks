@@ -1,4 +1,4 @@
-class Calculator
+hanclass Calculator
   def add(x,y)
     x + y
   end
