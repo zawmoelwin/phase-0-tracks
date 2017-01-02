@@ -70,6 +70,8 @@ end
 	
 =end
 
+=begin
+	
 
 
 puts "Please enter the source word to guess"
@@ -100,3 +102,5 @@ else
 	puts "Oh I see, it might be too hard for you."
 end
 
+	
+=end
