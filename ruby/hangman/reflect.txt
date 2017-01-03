@@ -1,0 +1,55 @@
+1. What are classes? Be sure to define the following terms in your explanation and describe the relationships between them:
+
+    class
+    class is a collection of data and a collection methods that do certain purpose.
+
+
+    state
+    http://rubylearning.com/satishtalim/writing_our_own_class_in_ruby.html
+
+
+    behavior
+    class encapsulate its data, protecting it from unauthorised access. Some data are strictly accessible from the class itself. Some data are strictly only modifiable but not getting them.
+
+
+
+    instance variable
+    Variable that are declared in the class. Each instantiated object has a seperate copy of the variable (same type but not the same value)
+
+
+
+    instance method
+    Methods that are inside the class. can be accessed through the instance of the class. or strictly only accessible through the methods of the class.
+
+
+
+2. What are attributes?
+	attributess are local data of the class. with its getter and setter methods.
+
+	http://www.railstips.org/blog/archives/2006/11/18/class-and-instance-variables-in-ruby/
+	unlike instance variable , they might be called class variable.
+
+3. Give an example of a real world object, and describe how you might assign its attributes if you were to design a class to represent that object.
+
+Creating the class of a customer account. (name is passed to the constructor [initialize method])
+there will be set password method (do not have read password method only set password) and check password to see if the given string is exactly the same with the password.
+
+
+
+
+4. What is the purpose of the initialize method? When does it run?
+Initialize method is the constructor method for the class.
+It runs when an object is initialised. It can be used to set default values or must have value for each object. The argument we passed through the .new constructor is passed to the initialize method.
+
+
+
+5. What are modules?
+They are like a pice of code that do not need to create an instance of themselves. They can still have the instance methods.
+https://matt.aimonetti.net/posts/2012/07/30/ruby-class-module-mixins/
+
+
+6. What are the different ways you can use a module?
+modules can be used to overcome ruby limitation of single inheritance.
+http://stackoverflow.com/questions/10692961/inheriting-class-methods-from-mixins
+
+they act as namesapce to use methods or organise them in a packet.
