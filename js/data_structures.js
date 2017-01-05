@@ -19,9 +19,28 @@ function Car (wheels, body, fuel_type) {
 	this.body =body;
 	this.fuel_type=fuel_type;
 
-	this.startengine = function {
+	this.startengine = function() {
 		console.log("Woo .. Wo.. ")
-	}
+	};
 }
 
-var sport_car = new Car("alloy", "coupe", "gasoline")
+var sport_car = new Car("alloy", "coupe", "gasoline");
+console.log(sport_car);
+sport_car.startengine();
+
+var truck = new Car("steel", "truck", "disel");
+console.log(truck);
+truck.startengine();
+for (var variable in truck) {
+  console.log(variable);
+  console.log(truck[variable]);
+}
+
+var mini = new Car("alloy", "mini", "gasoline");
+console.log(mini);
+mini.startengine();
+for (var property in mini) {
+    if (mini.hasOwnProperty(property)) {
+        console.log(property)
+    }
+}
