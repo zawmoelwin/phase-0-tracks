@@ -1,46 +1,43 @@
+
 displaying to the screen
-console.log
-
-we can't use variable name as var as they are reserved words.
+console.log("put something inside");
 
 
 
-// HASHLIKE (KEY-VALUE) BEHAVIOR
+Nil equivilant in JavaScript is undefined.
+Null might be close one but it is an object.
 
-// Objects in JavaScript behave as key-value data structures.
+to declare a variable var keyword word is used.
+these are reserved words and you cannot use them in the variable name.
 
-// Their keys can be strings, integers, or variable-like names
-// known as identifier names.
 
-// Their keys are often referred to as properties.
+How do you print a variable in JavaScript?
+console.log(variable);
 
-// Let's declare an object:
-var dog = {name: 'Spot', 'age': 3, isGoodDog: true};
 
-// Object values can be accessed with bracket notation ...
-console.log("The dog's name is " + dog['name'] + ".");
+How do you end a line of code in JavaScript?
+use ';'
 
-// or dot notation ...
-console.log("The dog's name is " + dog.age + ".");
+How do you write comments in JavaScript?
+// double slash
 
-// Notice the above access worked regardless of whether
-// the original key was a string or a variable-like name!
+difference in if statement
 
-// Bracket notation is handy for using variables
-// instead of literal strings or identifier names
-// to access information:
-var propertyName = 'name';
-console.log(dog[propertyName]);
+there is no end like Ruby in JavaScript.
+i.e. if statement is computed as they are line by line, condition by condition.
+if condition { proceed the code } 
+else if condition { proceed to the code }
+else { proceed to the code }
 
-// You can add key-value pairs anytime using two syntax styles.
-// Here's bracket notation:
-dog['weight'] = 14;
-// Here's dot notation:
-dog.adopted = false; // :(
+conditions are in perenthesis ()
+there is no elsif as a keyword.
 
-// Dot notation is often preferred for its simplicity, but won't work
-// for keys that have spaces in them.
+functions are declared with function keyword.
+with ( arg1, arg2) 
+{ and return inside the curly brackets}
 
-// You can update values anytime as well:
-dog.weight = 13;
-dog['adopted'] = true; // aww yay! :D
+JavaScript do not have implicit return.
+JavaScript dont execute functions without ().
+
+
+

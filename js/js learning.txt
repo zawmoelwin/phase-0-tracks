@@ -1,0 +1,3 @@
+http://stackoverflow.com/questions/8312459/iterate-through-object-properties
+
+http://stackoverflow.com/questions/4859800/should-i-be-using-object-literals-or-constructor-functions
