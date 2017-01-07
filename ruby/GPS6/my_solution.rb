@@ -84,3 +84,19 @@ end
 
 # alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
 # alaska.virus_effects
+
+#========================================================================
+# reflect 
+
+# One is key as string and another is key as symbol 
+# key as symbol are more immutable to changes and save memory and easier compairing (key just use id)
+# http://stackoverflow.com/questions/8189416/why-use-symbols-as-hash-keys-in-ruby
+
+# require_relative is looking for the file name relative to the file itself.
+# require will look through the $LOAD_PATH, but will not load the files in the current directory.
+
+# hash.each and hash.map are both iterate over the hash.
+
+# Instance variable for the class is accessible throughout the class.
+
+# this challenge solidify my understanding of Class, method, private method, and Hashes and iterate over hashes.
