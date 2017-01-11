@@ -50,6 +50,18 @@ function check_key (obj1, obj2)
 	//put that word to the array
 // return that array.
 
+
+//get the two objects
+//make them into arrays of keys
+	//loop through one of the array checking each content with the other array
+
+//make a key string
+	//math.random to determine the size of the word 
+		//use for loop to create random word using math.random and add each char to the words
+//above steps are repeated accoring to the size of the array argument.
+
+
+
 function word_maker (size)
 {
 	var key = "abcdefghijklmnopqrstuvwxyz"
