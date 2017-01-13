@@ -1,0 +1,12 @@
+select * from products, company_list where products.company_id = company_list.id;
+
+select products.id,  products.name, company_list.name from products join company_list where products.company_id=company_list.id;
+
+CREATE TABLE new_table AS select products.id,  products.name, company_list.name from products join company_list where products.company_id=company_list.id;
+
+select products.id, products.name, company_list.name from company_list inner join products on company_list.type = "Food" and products.company_id=company_list.id;
+
+delete * from company_list where type = "Drinks";
+
+update company_list set type = "Drink" where type = "Drinks";
+
