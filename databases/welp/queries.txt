@@ -1,0 +1,55 @@
+JOIN 3 TABLES
+
+SELECT users.id, businesses.id, reviews.stars, reviews.comment
+   ...> FROM users, businesses, reviews
+   ...> WHERE reviews.id = 1;
+1|1|2|slow service!
+1|2|2|slow service!
+1|3|2|slow service!
+1|4|2|slow service!
+2|1|2|slow service!
+2|2|2|slow service!
+2|3|2|slow service!
+2|4|2|slow service!
+3|1|2|slow service!
+3|2|2|slow service!
+3|3|2|slow service!
+3|4|2|slow service!
+4|1|2|slow service!
+4|2|2|slow service!
+4|3|2|slow service!
+4|4|2|slow service!
+------------------------------
+SELECT users.id, businesses.id, reviews.stars, reviews.comment
+   ...> FROM users, businesses, reviews
+   ...> WHERE reviews.id = 1 AND reviews.user_id = users.id AND reviews.business_id = businesses.id;
+2|2|2|slow service!
+------------------------------
+sqlite> SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment
+   ...> FROM users, businesses, reviews                                            ...> WHERE reviews.id = 1 AND reviews.user_id = users.id AND reviews.business_id=businesses.id;
+Mandy|Kaling|Amir's Towing|2|slow service!
+------------------------------
+sqlite> SELECT businesses.name, users.first_name, users.last_name, reviews.stars, reviews.comment
+   ...> FROM users, businesses, reviews                                            ...> WHERE businesses.id=reviews.business_id AND users.id=reviews.user_id
+   ...> ;
+Amir's Towing|Mandy|Kaling|2|slow service!
+Grundy Hollow Wedding Chapel|Mandy|Kaling|4|Good service!
+Amir's Towing|Mandy|Kaling|2|slow service!
+The Beagle Nightclub|Bradford|Pitt|2|slow service!
+Lotus Yoga|Steven|Wonder|5|very peaceful
+Lotus Yoga|Angela|Jolie|3|sorta peaceful
+Amir's Towing|Angela|Jolie|3|sorta peaceful
+
+------------------------------
+sqlite> SELECT businesses.name, users.first_name, users.last_name, reviews.stars, reviews.comment
+   ...> FROM users, businesses, reviews
+   ...> WHERE businesses.id=1 AND users.id=reviews.user_id AND businesses.id=reviews.business_id;
+Grundy Hollow Wedding Chapel|Mandy|Kaling|4|Good service!
+sqlite>
+
+------------------------------
+sqlite> SELECT businesses.name, users.first_name, users.last_name, reviews.stars, reviews.comment
+   ...> FROM users, businesses, reviews                                            ...> WHERE businesses.id=2 AND users.id=reviews.user_id AND businesses.id=reviews.business_id;
+Amir's Towing|Mandy|Kaling|2|slow service!
+Amir's Towing|Mandy|Kaling|2|slow service!
+Amir's Towing|Angela|Jolie|3|sorta peaceful
