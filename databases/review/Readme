@@ -1,0 +1,9 @@
+I've made a super ambiscious project that has search algorithms for bus routing.
+I am trying to structure my data with tables and trying to find an algorithms for it but 
+found out it is too large for the time-frame.
+
+I stopped in the middle of design stage, drawing database schema and pseudo code stage, and some exploratory coding as I end up keying in the data manually, and it doesnot fit the purpose of the assignment, familiar with the manipulation of the database.
+
+I ended up with writing simple note program that have SQL command and it has ability to create tables, records according to the input of the user.
+
+The program still lacks User interface as I do not have much time. Promise to improve it.
