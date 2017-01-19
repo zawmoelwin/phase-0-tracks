@@ -16,3 +16,24 @@ In old times, consumers can only buy hosting services. It is too expensive to ho
 
 Optional bonus question: Why is it considered a bad idea to run programs as the root user on a Linux system?
 Linux is Unix based, which is a server system, designed to be used by many users at once. It always ensure the system always stay safe. Running a program as root is considered security breach, as a root user can do anything even formatting the system disk running the OS. Softwares can have bugs or bad requests, so it is a good practice not to run programs as root user.
+
+
+
+
+
+https://christianheilmann.com/stuff/JavaScript-DOM-Cheatsheet.pdf
+
+http://www.w3schools.com/html/html_attributes.asp
+
+http://www.w3schools.com/jsref/prop_node_nodetype.asp
+
+https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
+
+https://gist.github.com/thegitfather/9c9f1a927cd57df14a59c268f118ce86#events
+
+http://stackoverflow.com/questions/814564/inserting-html-elements-with-javascript
+
+
+http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_node_firstchild
+
+http://stackoverflow.com/questions/10134045/haschildnodes-vs-firstchild
