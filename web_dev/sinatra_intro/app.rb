@@ -12,8 +12,15 @@ get '/' do
   "#{params[:name]} is #{params[:age]} years old."
 end
 
+get '/contact' do
+  "142, Zaw Gyi Street, South Dagon Industrial Zone, Yangon, Myanmar" 
+end
+
+
+
 # write a GET route with
 # route parameters
+
 get '/about/:person' do
   person = params[:person]
   "#{person} is a programmer, and #{person} is learning Sinatra."
@@ -21,6 +28,24 @@ end
 
 get '/:person_1/loves/:person_2' do
   "#{params[:person_1]} loves #{params[:person_2]}"
+end
+
+get '/great_job' do
+  name = params[:name]
+  if name
+    "Good Job!, #{name}."
+  else
+    "Good Job!!"
+  end
+end
+
+get '/add_numbers' do
+  value1 = params[:val1].to_i
+  value2 = params[:val2].to_i
+  result = value1+value2
+
+  "The result is #{result}"
+
 end
 
 # write a GET route that retrieves
@@ -35,6 +60,28 @@ get '/students' do
     response << "Campus: #{student['campus']}<br><br>"
   end
   response
+end
+
+get '/search' do
+  students = db.execute("#{params[:search]}")
+  response = ""
+  students.each do |student|
+    response << "ID: #{student['id']}<br>"
+    response << "Name: #{student['name']}<br>"
+    response << "Age: #{student['age']}<br>"
+    response << "Campus: #{student['campus']}<br><br>"
+  end
+  response
+  # searchterm = params[:search]
+  # students = db.execute("SELECT * FROM students")
+  # p params
+  # results = db.execute("#{params[:search]}")
+  # response = ""
+  # result.each do |eachresult|
+  #   response << "<b>ID</b>: #{eachresult['id']}<br>"
+  #   response << "<b>Name</b>: #{eachresult['name']}<br>"    
+  #   response << "<b>Age</b>: #{eachresult['age']}<br>"
+  #   response << "<b>Campus</b>: #{eachresult['campus']}<br><br>"
 end
 
 # write a GET route that retrieves
