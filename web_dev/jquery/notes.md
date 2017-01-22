@@ -2,7 +2,7 @@ notes.md
 
 google jquery main site and documentation.
 google jquery sample codes.
-
+test and experiment along the reading.
 
 
 
